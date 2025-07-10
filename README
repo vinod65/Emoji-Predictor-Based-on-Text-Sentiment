@@ -1,0 +1,64 @@
+# 🧠 Emoji Predictor Web App
+
+This is a fun and simple Machine Learning project that predicts an emoji based on your sentence. Built using **Python, Streamlit, and Scikit-learn**.
+
+---
+
+## 🚀 Features
+
+- Predicts emojis like 😊 😢 😍 😡 🎉 💔 🐶
+- Web-based interface using Streamlit
+- Trained using TF-IDF + Logistic Regression
+- Custom emoji dataset (CSV)
+
+---
+
+## 📂 Project Structure
+
+emoji_predictor_project/
+├── emoji_app.py # Streamlit app
+├── emoji_dataset.csv # Custom training dataset
+├── main.py # Console version (optional)
+└── README.md # Project documentation
+
+
+## 📦 Requirements
+
+- Python 3.10 or above  
+- Install dependencies:
+
+```bash
+pip install streamlit scikit-learn pandas
+
+ Sample Dataset
+The app uses a CSV file with two columns:
+
+text: Sentence input
+
+emoji: Matching emoji
+
+Example:
+
+csv
+Copy
+Edit
+text,emoji
+I am very happy today,😊
+Feeling sad and alone,😢
+I'm really angry now,😡
+...
+
+🧠 How it Works
+Input sentence is vectorized using TfidfVectorizer
+
+Trained on LogisticRegression
+
+Predicts the closest matching emoji from the training data
+
+Future Ideas
+Use deep learning (like BERT) for better predictions
+
+Allow multiple emojis
+
+Deploy online using Streamlit Cloud
+
